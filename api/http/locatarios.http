@@ -1,0 +1,50 @@
+// Teste das Requisições REST dos locatarios
+@baseURL = http://localhost:4000/api/locatarios
+
+// GET - Lista todos os registros
+GET {{baseURL}}
+Content-Type: application/json
+
+###
+// GET - Lista um registro pelo id
+GET {{baseURL}}/id/64ff30870444128a36e3f4aa
+Content-Type: application/json
+
+###
+// GET - Lista um registro pela razão social
+GET {{baseURL}}/nome/josé
+Content-Type: application/json
+
+###
+// DELETE - Apaga um registro pelo id
+DELETE {{baseURL}}/64ff261e0d4ff54ddb4d66c8
+Content-Type: application/json
+
+###
+// POST - Insere um novo registro
+POST {{baseURL}}
+Content-Type: application/json
+
+{
+    "cpf": "45874563215",
+    "nome": "JOSE",
+    "idade": 43,
+    "data_nascimento": "1978-11-20",
+    "telefone": "(15) 974562365"
+    }
+
+
+###
+// PUT - Altera o registro
+PUT {{baseURL}}
+Content-Type: application/json
+
+{
+    "cpf": "56923478555",
+    "nome": "MARIA CRISTINA",
+    "idade": 53,
+    "data_nascimento": "1968-08-01",
+    "telefone": "(15) 965486325"
+    }
+
+
