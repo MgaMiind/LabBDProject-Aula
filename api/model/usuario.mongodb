@@ -1,0 +1,19 @@
+use('locatarios')
+db.usuarios.insertOne({
+    'nome': 'Maria José',
+    'email': 'marialjose@uol.com.br',
+    'senha': '123mudar',
+    'activo': true,
+    'tipo': 'Cliente',
+    'avatar': 'https://ui-avatars.com/api/?name=Maria+José&background=F00&color=00F'
+
+})
+//criando um indice unico
+use('locatarios')
+db.usuarios.createIndex({'email':1},{unique:true})
+//exemplo de listagem
+use('locatarios')
+db.usuarios.find({},{senha:0})
+
+use('locatarios')
+db.usuarios.drop()
