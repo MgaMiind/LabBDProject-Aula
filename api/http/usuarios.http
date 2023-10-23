@@ -10,3 +10,40 @@ Content-Type: application/json
     "email": "ze@uol.com.br",
     "senha": "Alun0@"
 }
+
+###
+//POST - Efetuar o login
+POST {{baseURL}}/login
+Content-Type: application/json
+
+{
+    "email": "ze@uol.com.br",
+    "senha": "Alun0@"
+}
+
+###
+//GET - Obtem os usuarios
+GET {{baseURL}}
+Content-Type: application/json
+access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7ImlkIjoiNjUzNjc4MmQ3MWY1NDk4YzJmNzVhNjc0In0sImlhdCI6MTY5ODA2OTA2NCwiZXhwIjoxNjk4MzI4MjY0fQ.qq75orteclp5lOIfxpbqr9Ca1GnaUSsdeAy_L9K3ics
+
+###
+//DELETE - Remove o usuario pelo id
+DELETE {{baseURL}}/6536782d71f5498c2f75a674
+Content-Type: application/json
+access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7ImlkIjoiNjUzNjc4MmQ3MWY1NDk4YzJmNzVhNjc0In0sImlhdCI6MTY5ODA2OTA2NCwiZXhwIjoxNjk4MzI4MjY0fQ.qq75orteclp5lOIfxpbqr9Ca1GnaUSsdeAy_L9K3ics
+
+###
+// PUT - Edita o usuario pelo ID
+PUT {{baseURL}}/65368b7916071445d57e8c30
+Content-Type: application/json
+access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7ImlkIjoiNjUzNjc4MmQ3MWY1NDk4YzJmNzVhNjc0In0sImlhdCI6MTY5ODA2OTA2NCwiZXhwIjoxNjk4MzI4MjY0fQ.qq75orteclp5lOIfxpbqr9Ca1GnaUSsdeAy_L9K3ics
+
+{
+    "nome": "José Alves da Silva",
+    "email": "ze@uol.com.br",
+    "ativo": true,
+    "tipo": "Cliente",
+    "senha": "Alun0@",
+    "avatar": "https://ui-avatars.com/api/?name=José+Alves+da+Silva&background=F00&color=00F"
+}
