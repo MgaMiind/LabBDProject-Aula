@@ -1,24 +1,23 @@
 const { response } = require("express")
-
 const urlBase = 'http://localhost:4000/api'
-
 //monitorando o submit do formulário
-document.getElementById('loginForm').addEventListener('submit', function(event){
+document.getElementById("loginForm").addEventListener("submit", function(event){
     event.preventDefault() //evita o recarregamento do form
     //obtendo os valores do form
     const login = document.getElementById('login').value
     const senha = document.getElementById('senha').value
-    const resultadoModal = new bootstrap.Modal(document.getElementById('modalMensagem'))
+    const resultadoModal = new bootstrap.Modal(document.getElementById("modalMensagem"))
     //criando o objeto para autenticar
     const dadosLogin = {
         email: login,
         senha: senha
     }
+
     //efetuando o post para a API REST
     fetch(`${urlBase}/usuarios/login`,{
-        method: 'POST',
+        method: "POST",
         headers: {
-            'Content-Type': 'application-json'
+            "Content-Type": "application-json"
         },
         body: JSON.stringify(dadosLogin)
     })

@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Área Restrita</title>
     <!-- Bootstrap 5 -->
@@ -18,38 +16,36 @@
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="images/computer.png" />
 </head>
-
 <body>
     <div class="container mt-5">
         <div class="row justify-content-center">
-            <div class="col-md-4">
-                <div class="card shadow-lg">
+            <div class="col-md-6">
+                <div class="card shadow">
                     <div class="card-header">
-                        <h2 class="text-success">Área Principal</h2>
-                       <!-- svg -->
-                        <div class="d-flex align-itens-center">
-                        <object data="images/winner.svg" type="image/svg+xml" style="width:50%"></object>
-                        </div>
+                        <h1 class="text-success">Área Principal</h1>
                     </div>
+                        <!-- svg -->
+                        <div class="d-flex align-itens-center">
+                            <object data="images/winner.svg" type="image/svg+xml" style="width:50%"></object>
+                        </div>
                     <div class="card-body">
                         <form id="loginForm">
-                            <div class="my-1">
-                                <label for="login" class="form-label">E-mail do usuário
-                                </label>
+                            <div class="mb-2">
+                                <label for="login" class="form-label">E-mail do usuário</label>
                                 <input type="text" class="form-control" id="login" name="login" autofocus autocomplete="email">
                             </div>
-                            <div class="my-1">
+                            <div class="mb-2">
                                 <label for="senha" class="form-label">Senha</label>
                                 <input type="password" class="form-control" id="senha" name="senha">
                             </div>
-                            <div class="my-1">
+                            <div class="mt-3">
                                 <button type="submit" class="btn btn-success">
                                     <i class="bi bi-file-earmark-lock"></i>Login
                                 </button>
                             </div>
                         </form>
                     </div>
-                    <div class="card-footer">
+                    <div class="card-footer text-muted">
                         Ainda não é usuário? <a href="usuario.html">Cadastre-se</a>
                     </div>    
                 </div>
